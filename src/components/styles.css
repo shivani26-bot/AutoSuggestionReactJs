@@ -1,0 +1,57 @@
+.container {
+  width: 100%;
+
+  /* height: 100vh; */
+
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.container > input {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 40%;
+  position: relative;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.loading,
+.error {
+  padding: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.error {
+  color: red;
+}
+
+.suggestions-list {
+  width: 40%;
+  max-height: 200px;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  border: 1px solid black;
+  border-top: none;
+  list-style: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  line-height: 2;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
